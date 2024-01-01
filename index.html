@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Verify</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Quick Verify Debugger</h3>
+    <p>Drop OpenAttestation file to start the verification.</p>
+    <input type="file" name="file" id="file">
+    <p hidden id="loader"><small>Loading…</small></p>
+    <div id="output"></div>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
