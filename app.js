@@ -43,7 +43,7 @@ async function decodeDocument({ target }) {
 
     const documentData = getData(wrappedDocument);
     const provider = verification.generateProvider({
-      network: documentData.network.chain.toLowerCase(),
+      network: 'network' in documentData ? documentData.network.chain.toLowerCase() : "mainnet",
     });
 
     const verifier = verificationBuilder(
